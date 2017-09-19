@@ -1,0 +1,327 @@
+General / All Pages*/
+/* Add a black background color to the top navigation */
+
+
+
+*{
+    box-sizing: border-box;
+
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+        background-image: url("https://i.pinimg.com/236x/e7/56/a0/e756a00a1ec23a6f6b95dad00040455f--swirl-pattern-pattern-texture.jpg");
+
+}
+          
+                          
+
+                                    /**/
+
+
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #009999;}
+
+ul.topnav li a.active {background-color: #009999;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none; } {column-width: 33.3%;}
+}
+
+
+
+
+                        /*BODY*/
+
+
+                        /*FORM*/
+
+
+
+
+
+.FormContainer {
+    width:40%;
+    border-radius: 5px;
+    background-color: white ;
+    margin: 20px 20px 20px 40px;
+    padding: 60px;
+    float: left;
+    
+}
+
+
+
+/*Contact*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #009999;
+    color: white;
+    font-size: 50;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+                        /*SOCIAL*/
+
+.SocialConnect {
+    width: 25%;
+    border-radius: 5px;
+    background-color: white;
+    margin: 100px;
+    padding: 50px;
+    float: left;
+    font-size: 30px;
+    color: #009999; 
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 50px; 
+    text-align: center;  
+}
+
+#contacttitle {
+    font-size: 45px;
+    color: #009999; 
+    font-weight: bold;
+    
+}
+
+#picformat img {
+    width:50px;
+    height:50px;
+    margin-right: 5px;
+}
+
+
+                /*ABOUT*/
+
+.abouttext p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 150%;
+
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.profilepic {
+    margin-right: 10px;
+    float: left;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+.pimages img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+
+#biopic{
+    width: 100%;
+}
+
+
+
+
+
+/*PORTFOLIO*/
+
+
+.portpics {
+    float: left;
+    margin-bottom: 20px;
+    width: 47%;
+    position: relative;
+}
+
+
+.portpics p {
+    background-color: teal;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+}
+
+
+
+#imageholder {
+    margin-left: 35px;
+}
+/*every odd element inside the class portpics inside the id imageholder should have a margin to the right of 10px*/
+#imageholder .portpics:nth-child(odd) {
+    margin-right: 10px;
+}
+
+#imageholder .portpics:nth-child(even) {
+    margin-left: 10px;
+}
+
+.portimage {
+    width: 100%;
+}
+                                /*FOOTER*/
+
+footer {
+
+    color: white;
+    clear: both;
+    border-top: 7px solid #009999;
+    background-color: #333;
+    height: 100px;
+    margin-top: 30px;
+
+
+}
+
+#copyright{
+    margin-top: 40px;
+}
+
+
+
+/*Media Query*/
+
+@media screen and (max-width: 768px) {
+
+
+
+
+  .socialconnect {
+    margin-left: 20px ;
+    margin-right: auto ;
+    float: none;
+
+  }
+
+
+.mq {
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .mq {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*  .socialconnect {
+    margin-left: 20px ;
+    margin-right: auto ;
+    float: none;
+
+
+
+
+  } */
+
+
+.center-div
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 600px){
+    a.topnav a {float: none; } {column-width: 33.3%;}
+}
+
+
+
+
+
+
+
+
+
+/*NAVBAR TEST*/
+
+
+
+
+
+
+/********
